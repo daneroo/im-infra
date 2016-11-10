@@ -1,0 +1,4 @@
+--- # YAML Config
+environment: dev
+region: us-east-1
+node-type: t2.micro
