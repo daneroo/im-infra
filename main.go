@@ -1,3 +1,4 @@
+// im-infra is a command line tool for managing docker-cloud infrastructure and deployment
 package main
 
 import (

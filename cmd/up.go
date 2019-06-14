@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/daneroo/im-infra/dc"
 	"github.com/spf13/cobra"
 )
 
@@ -22,6 +23,7 @@ func init() {
 func doit(cmd *cobra.Command, args []string) {
 	fmt.Println("up called: " + strings.Join(args, " "))
 
+	dc.Up()
 	// cmd.PersistentFlags.
 
 }

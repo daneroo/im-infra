@@ -5,7 +5,6 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/daneroo/im-infra/dc"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 )
@@ -51,7 +50,7 @@ docker-cloud infrastucture provisioning and deployment`,
 		json, _ := json.MarshalIndent(viper.AllSettings(), "", "  ")
 		fmt.Printf("Root:PreRun Viper: %v\n", string(json))
 
-		dc.Try(viper.GetBool("verbose"), viper.GetBool("dry-run"))
+		// dc.Try(viper.GetBool("verbose"), viper.GetBool("dry-run"))
 	},
 }
 
